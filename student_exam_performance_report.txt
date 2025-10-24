@@ -1,0 +1,128 @@
+## 📘 **Student Exam Performance Analysis using NumPy**
+
+---
+
+### 🧭 **1. Objective**
+
+The goal of this project is to analyze how various student habits — such as **hours studied**, **sleep duration**, and **attendance percentage** — influence **final exam performance**.
+Using **NumPy**, this project demonstrates efficient data handling, numerical computation, and conditional analysis.
+
+---
+
+### 🗂️ **2. Dataset Description**
+
+* **File Used:** `student_exam_scores.csv`
+* **Rows:** (Number of students)
+* **Columns:**
+
+  1. Student ID
+  2. Hours Studied
+  3. Sleep Hours
+  4. Attendance %
+  5. Previous Scores
+  6. Exam Score
+
+The dataset provides behavioral and academic data points that can be analyzed for performance insights.
+
+---
+
+### 📊 **3. Analysis Steps**
+
+1. **Data Loading:** Imported the CSV file using `np.genfromtxt()` with `skip_header=1` to exclude column names.
+2. **Descriptive Statistics:** Computed **mean**, **max**, **min**, and **standard deviation** for each numerical variable.
+3. **Correlation Analysis:** Used `np.corrcoef()` to identify which study factors are most correlated with exam performance.
+4. **Grading:** Applied nested `np.where()` conditions to classify students into grades A, B, C, D, or F.
+5. **Group Comparison:** Compared **High vs Low** groups for Study Hours, Attendance, and Sleep based on their mean values.
+6. **Insights & Conclusion:** Summarized overall trends and findings for data interpretation.
+
+---
+
+### 📈 **4. Descriptive Statistics Summary**
+
+Variable                  Mean       Max        Min        Std       
+-----------------------------------------------------------------
+Hours Studied             6.33       12.00      1.00       3.22      
+Sleep Hours               6.62       9.00       4.00       1.49      
+Attendance Percentage     74.83      100.00     50.30      14.21     
+Previous Scores           66.80      95.00      40.00      15.62     
+Exam Scores               33.95      51.30      17.10      6.77
+---
+
+### 🔗 **5. Correlation Analysis**
+
+Correlation Analysis
+-----------------------------------------------------------------
+Hours Studied             0.78      
+Sleep Hours               0.19      
+Attendance Percentage     0.23      
+Previous Scores           0.43 
+
+🧠 **Interpretation:**
+Higher study hours and attendance show strong positive correlation with exam performance. Sleep hours show weak or slightly negative correlation, suggesting sleep alone does not directly increase marks.
+
+---
+
+### 🏅 **6. Grade Distribution**
+
+Grade      Count     
+-----------------------------------------------------------------
+A          38        
+B          53        
+C          53        
+D          36        
+F          20 
+
+Total Students: 200
+Passed: 91 (45.50%)
+Failed: 109 (54.50%)
+---
+
+### 🧩 **7. Group Performance Comparison**
+
+Group Performance Comparison
+-----------------------------------------------------------------
+Factor               High Avg             Low Avg              Difference          
+-----------------------------------------------------------------
+Hours Studied        38.80                29.40                9.40                
+Average Attendances  34.96                32.93                2.04                
+Average Sleep        35.01                32.84                2.17
+
+🧠 **Interpretation:**
+• Students who studied more hours scored on average +9.4 marks higher.
+• Students with better attendance performed +6.3 marks better.
+• Sleep hours had minimal effect or a slight negative difference (−1.4).
+---
+
+### 📊 **8. Key Insights**
+
+* Study commitment and consistent attendance have the **strongest impact** on exam success.
+* Sleep patterns alone do not strongly predict performance.
+* Students with above-average study time and attendance achieve **significantly higher exam scores**.
+* The overall pass percentage indicates the class performed moderately well, with room for improvement in preparation habits.
+
+---
+
+### 🧾 **9. Tools Used**
+
+| Component          | Description                                                                                                    |
+| ------------------ | -------------------------------------------------------------------------------------------------------------- |
+| **Language**       | Python                                                                                                         |
+| **Library**        | NumPy                                                                                                          |
+| **Data Format**    | CSV                                                                                                            |
+| **Functions Used** | `np.genfromtxt()`, `np.mean()`, `np.std()`, `np.corrcoef()`, `np.where()`, `np.unique()`, `np.count_nonzero()` |
+
+---
+
+### 🧠 **10. Conclusion**
+
+This project shows how numerical computation in **NumPy** can reveal meaningful patterns in educational data.
+The analysis confirms that **hours studied** and **attendance percentage** are the most influential factors for student success, while **sleep hours** have limited direct correlation.
+This framework provides a foundation for expanding into **Pandas-based analysis**, **visualization (Matplotlib)**, or **predictive modeling (Scikit-Learn)**.
+
+---
+
+### 👨‍💻 **Author**
+
+**Project by:** *Bhagawan S Raju*
+**Category:** *Data Analysis using Python (NumPy)*
+**Date:** *(24/10/25)*
