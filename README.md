@@ -112,8 +112,7 @@ Compared their average exam scores to find which factor had the greatest impact.
 
 ## 📁 Project Structure
 Student-Exam-Performance/
-│
-├── student_exam_scores.csv # Dataset file
-├── exam_performance.py # Python analysis code
-├── student_exam_performance_report # Full written report
-└── README.md # GitHub project documentation
+student_exam_scores.csv # Dataset file
+exam_performance.py # Python analysis code
+student_exam_performance_report # Full written report
+README.md # GitHub project documentation
